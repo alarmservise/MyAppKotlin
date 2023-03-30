@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                 R.string.correct_toast,
                 Toast.LENGTH_SHORT)
                 .show()
-        // Что-то выполнить после нажатия
+        // Что-то выполнить после нажатия кнопки
         }
 
         falseButton.setOnClickListener { view: View ->
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 R.string.incorrect_toast,
                 Toast.LENGTH_SHORT)
                 .show()
-        // Что-то выполнить после нажатия
+        // Что-то выполнить после нажатия кнопки
         }
     }
 }
