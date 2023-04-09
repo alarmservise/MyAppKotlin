@@ -63,11 +63,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun checkAnswer(userAnswer: Boolean) {
         val correctAnswer = quizViewModel.currentQuestionAnswer
-        val messsageResIdb= if (userAnswer == correctAnswer) {
+        val messageResIdb= if (userAnswer == correctAnswer) {
             R.string.correct_toast
         } else {
             R.string.incorrect_toast
         }
-        Toast.makeText(this, messsageResIdb, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, messageResIdb, Toast.LENGTH_SHORT).show()
     }
 }

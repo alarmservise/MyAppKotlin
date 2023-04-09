@@ -1,6 +1,5 @@
 package com.alarmservise.myappkotlin
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 
 const val TAG = "QuizViewModel"
@@ -10,12 +9,12 @@ class QuizViewModel: ViewModel() {
     var currentIndex = 0
 
     private val questionBank = listOf(
-        Qutstion(R.string.question_australia, true),
-        Qutstion(R.string.question_oceans, true),
-        Qutstion(R.string.question_mideast, false),
-        Qutstion(R.string.question_africa, false),
-        Qutstion(R.string.question_americas, true),
-        Qutstion(R.string.question_asia, true)
+        Question(R.string.question_australia, true),
+        Question(R.string.question_oceans, true),
+        Question(R.string.question_mideast, false),
+        Question(R.string.question_africa, false),
+        Question(R.string.question_americas, true),
+        Question(R.string.question_asia, true)
     )
 
     val currentQuestionAnswer: Boolean
