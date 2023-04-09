@@ -38,10 +38,14 @@ class MainActivity : AppCompatActivity() {
 
         trueButton.setOnClickListener { view: View ->
             checkAnswer(true)
+            quizViewModel.moveToText()
+            updateQuestion()
         }
 
         falseButton.setOnClickListener { view: View ->
             checkAnswer(false)
+            quizViewModel.moveToText()
+            updateQuestion()
         }
 
         nextButton.setOnClickListener {
